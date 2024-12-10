@@ -1,0 +1,91 @@
+@use 'variaveis' as vars;
+@use 'header';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "EB Garamond", serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+    .select-wrapper {
+        margin-bottom: 20px;
+        text-align: center;
+    label {
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    select {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    }
+
+    .page-display {
+        display: flex;
+        flex-wrap: wrap;
+
+    .page {
+        display: none; // Todas as páginas são ocultas inicialmente
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        &.active {
+            display: flex; // Apenas a página ativa será visível
+        }
+
+        .page-image {
+            width: 50%;
+            max-width: 500px;
+            margin-right: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .audio-list {
+            flex: 1;
+            list-style: none;
+            padding: 0;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        audio {
+            width: 100%;
+        }
+        }
+    }
+    }
+}
+
+@media (max-width: 767px) {
+    .main-content {
+      .page-display {
+        .page {
+          flex-direction: column; // Alinha os elementos em coluna
+          align-items: center;   // Centraliza os itens
+  
+          .page-image {
+            width: 100%;          // A imagem ocupa toda a largura
+            max-width: none;      // Remove o limite de largura
+            margin-right: 0;      // Remove o espaço à direita
+            margin-bottom: 20px;  // Adiciona espaço abaixo da imagem
+          }
+  
+          .audio-list {
+            width: 100%;          // A lista de áudios ocupa toda a largura
+          }
+        }
+      }
+    }
+  }

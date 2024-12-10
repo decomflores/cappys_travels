@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cappy's Travels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Pridi:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cadu dos Livros</h1>
+            <div class="icons">
+                <a href="https://www.youtube.com/cadudoslivros">
+                    <img src="https://static.wixstatic.com/media/11062b_8dcadfa428954b1d919f8499f75aa27a~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_8dcadfa428954b1d919f8499f75aa27a~mv2.png" alt="ícone do youtube">
+                </a>
+                <a id="insta" href="https://www.facebook.com/cadu.doslivros">
+                    <img src="https://static.wixstatic.com/media/11062b_55e4be1e75564866b6c28290f9a9d271~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/alt_text_label_Instagram.png" alt="ícone do instagram">
+                </a>
+                <a href="https://www.facebook.com/cadu.doslivros">
+                    <img src="https://static.wixstatic.com/media/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png/v1/fill/w_50,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_2381e8a6e7444f4f902e7b649aa3f0ac~mv2.png" alt="ícone do facebook">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+            <div class="select-wrapper">
+                <label for="page-select">Selecione a Página:</label>
+                <select id="page-select">
+                    <option value="" disabled selected>Escolha...</option>
+                    <!-- 24 páginas -->
+                    <option value="1">Página 1</option>
+                    <option value="2">Página 2</option>
+                    <option value="3">Página 3</option>
+                    <option value="4">Página 4</option>
+                    <option value="5">Página 5</option>
+                    <option value="6">Página 6</option>
+                    <option value="7">Página 7</option>
+                    <option value="8">Página 8</option>
+                    <option value="9">Página 9</option>
+                    <option value="10">Página 10</option>
+                    <option value="11">Página 11</option>
+                    <option value="12">Página 12</option>
+                    <option value="13">Página 13</option>
+                    <option value="14">Página 14</option>
+                    <option value="15">Página 15</option>
+                    <option value="16">Página 16</option>
+                    <option value="17">Página 17</option>
+                    <option value="18">Página 18</option>
+                    <option value="19">Página 19</option>
+                    <option value="20">Página 20</option>
+                    <option value="21">Página 21</option>
+                    <option value="22">Página 22</option>
+                    <option value="23">Página 23</option>
+                    <option value="24">Página 24</option>
+                    <!-- Adicione as opções até Página 24 -->
+                </select>
+            </div>
+        
+            <div class="page-display">
+                <!-- Exibição dinâmica -->
+                <!-- Exemplo de estrutura para uma página -->
+                <div class="page" id="page-1">
+                    <img src="img/p1.jpg" alt="Página 1" class="page-image">
+                    <ul class="audio-list">
+                        <li><label for="page1-audio1">Áudio 1</label><audio controls src="audio/page1-audio1.mp3"></audio></li>
+                        <li><label for="page1-audio2">Áudio 2</label><audio controls src="audio/page1-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+            
+                <!-- Repetir estrupda página -->
+                <div class="page" id="page-2">
+                    <img src="img/p2.jpg" alt="Página 2" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-3">
+                    <img src="img/p3.jpg" alt="Página 3" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-4">
+                    <img src="img/p4.jpg" alt="Página 4" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-5">
+                    <img src="img/p5.jpg" alt="Página 5" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-6">
+                    <img src="img/p6.jpg" alt="Página 6" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-7">
+                    <img src="img/p7.jpg" alt="Página 7" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-8">
+                    <img src="img/p8.jpg" alt="Página 8" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-9">
+                    <img src="img/p9.jpg" alt="Página 9" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-10">
+                    <img src="img/p10.jpg" alt="Página 10" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-11">
+                    <img src="img/p11.jpg" alt="Página 11" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-12">
+                    <img src="img/p12.jpg" alt="Página 12" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-13">
+                    <img src="img/p13.jpg" alt="Página 13" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-14">
+                    <img src="img/p14.jpg" alt="Página 14" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-15">
+                    <img src="img/p15.jpg" alt="Página 15" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-16">
+                    <img src="img/p16.jpg" alt="Página 16" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-17">
+                    <img src="img/p17.jpg" alt="Página 17" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-18">
+                    <img src="img/p18.jpg" alt="Página 18" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-19">
+                    <img src="img/p19.jpg" alt="Página 19" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-20">
+                    <img src="img/p20.jpg" alt="Página 20" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-21">
+                    <img src="img/p21.jpg" alt="Página 21" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-22">
+                    <img src="img/p22.jpg" alt="Página 22" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-23">
+                    <img src="img/p23.jpg" alt="Página 23" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+                <div class="page" id="page-24">
+                    <img src="img/p24.jpg" alt="Página 24" class="page-image">
+                    <ul class="audio-list">
+                        <li><audio controls src="audio/page2-audio1.mp3"></audio></li>
+                        <li><audio controls src="audio/page2-audio2.mp3"></audio></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+<script src="src/main.js"></script>
+</body>
+</html>

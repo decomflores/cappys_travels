@@ -1,0 +1,95 @@
+header {
+  background-color: #0a4a6e;
+  padding: 24px 24px;
+  text-align: center;
+}
+header h1 {
+  color: #fff;
+  margin-bottom: 24px;
+  font-size: 48px;
+}
+header .icons a :hover {
+  transform: translateY(3px);
+  transition: 0.6s;
+}
+header .icons #insta {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.main-content .select-wrapper {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main-content .select-wrapper label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+.main-content .select-wrapper select {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+.main-content .page-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content .page-display .page {
+  display: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-content .page-display .page.active {
+  display: flex;
+}
+.main-content .page-display .page .page-image {
+  width: 50%;
+  max-width: 500px;
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.main-content .page-display .page .audio-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+}
+.main-content .page-display .page .audio-list li {
+  margin-bottom: 10px;
+}
+.main-content .page-display .page .audio-list audio {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .main-content .page-display .page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-content .page-display .page .page-image {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .main-content .page-display .page .audio-list {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

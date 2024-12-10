@@ -1,0 +1,23 @@
+@use 'variaveis' as vars;
+
+header {
+    background-color: vars.$txtColor1;
+    padding: 24px 24px;
+    text-align: center;
+    h1 {
+        color: #fff;
+        margin-bottom: 24px;
+        font-size: 48px;
+    }
+    .icons {
+        a :hover {
+            transform: translateY(3px);
+            transition: 0.6s;
+        }
+        #insta {
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+    }
+}
+
