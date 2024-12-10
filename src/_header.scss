@@ -4,10 +4,16 @@ header {
     background-color: vars.$txtColor1;
     padding: 24px 24px;
     text-align: center;
+    border-bottom: none;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
     h1 {
         color: #fff;
-        margin-bottom: 24px;
         font-size: 48px;
+    }
+    p {
+        color: #fff;
+        font-size: 36px;
+        margin: 24px 0;
     }
     .icons {
         a :hover {
@@ -15,8 +21,8 @@ header {
             transition: 0.6s;
         }
         #insta {
-            margin-left: 24px;
-            margin-right: 24px;
+            margin-left: 18px;
+            margin-right: 18px;
         }
     }
 }
